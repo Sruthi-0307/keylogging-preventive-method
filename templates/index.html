@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
+    <!-- Material Icons CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <div id="overlay"></div>
+    <form action="/process_input" method="post">
+    <input type="password" class='keyboard-input'></input>
+    <input type="submit">
+</form>
+
+    <script src="{{ url_for('static', filename='app2.js') }}"></script>  
+</body>
+</html>
